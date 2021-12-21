@@ -46,10 +46,10 @@ ohos_executable("mkfs.ntfs") {
     "../libfuse-lite:libfuse_lite",
     "../libntfs-3g:libntfs_3g",
   ]
-  
+  install_enable = true
   subsystem_name = "storage_manager"
   part_name = "storage_standard"
-
+  install_images = ["system"]
 }
 
 ohos_executable("fsck.ntfs") {
@@ -62,10 +62,10 @@ ohos_executable("fsck.ntfs") {
     "../libfuse-lite:libfuse_lite",
     "../libntfs-3g:libntfs_3g",
   ]
-  
+  install_enable = true
   subsystem_name = "storage_manager"
   part_name = "storage_standard"
-
+  install_images = ["system"]
 }
 ohos_executable("ntfsfix") {
   sources = [
@@ -77,9 +77,10 @@ ohos_executable("ntfsfix") {
     "../libfuse-lite:libfuse_lite",
     "../libntfs-3g:libntfs_3g",
   ]
-  
+  install_enable = true
   subsystem_name = "storage_manager"
   part_name = "storage_standard"
+  install_images = ["system"]
 }
 ohos_executable("mount.ntfs") {
   sources = [
@@ -91,9 +92,10 @@ ohos_executable("mount.ntfs") {
     "../libfuse-lite:libfuse_lite",
     "../libntfs-3g:libntfs_3g",
   ]
-  
+  install_enable = true
   subsystem_name = "storage_manager"
   part_name = "storage_standard"
+  install_images = ["system"]
 }
 ohos_executable("ntfsresize") {
   sources = [
@@ -105,7 +107,8 @@ ohos_executable("ntfsresize") {
     "../libfuse-lite:libfuse_lite",
     "../libntfs-3g:libntfs_3g",
   ]
-  
+  install_enable = true
   subsystem_name = "storage_manager"
   part_name = "storage_standard"
+  install_images = ["system"]
 }
